@@ -17,9 +17,10 @@ export class CepDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const numeroCep = "" + this.route.snapshot.paramMap.get("cep");
-    this.cepService.readByCep(numeroCep).subscribe(cep => {
-      this.cep = cep
-    })
+
+    const numeroCep = String(this.route.snapshot.paramMap.get("cep"));
+
+    this.cepService.getCep(numeroCep).subscribe(cep =>  this.cep = cep )
+
   }
 }

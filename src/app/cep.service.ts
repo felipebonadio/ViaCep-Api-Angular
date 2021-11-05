@@ -10,10 +10,9 @@ import { Cep } from './cep.model';
 })
 export class CepService {
 
-  baseUrl : string = "https://viacep.com.br/ws/"
+  constructor(private snackBar : MatSnackBar, private http : HttpClient) {
 
-  constructor(private snackBar : MatSnackBar,
-    private http : HttpClient) { }
+   }
 
     showMessage(msg: string, isError : boolean = false): void{
       this.snackBar.open(msg, 'X', {
@@ -29,9 +28,8 @@ export class CepService {
       return EMPTY
     }
 
-    readByCep(cep: string) : Observable<Cep>{
-     let url = `${this.baseUrl}${cep}/json/`  
-     return this.http.get<Cep>(url).pipe(
+    getCep(cep: string) : Observable<Cep>{
+      return this.http.get<Cep>('https://viacep.com.br/ws/'+cep+'/json').pipe(
       map(obj => obj),
       catchError(e => this.errorHandler(e))
       );
