@@ -1,0 +1,7 @@
+<mat-card class="mat-elevation-z3">
+    <h2>Insira o CEP que gostaria de pesquisar</h2>
+      
+    <p><input type="text" id="cep" name="cep" #cep></p>
+        
+    <button type="button" (click)="getCep(cep.value)">Consultar</button>
+</mat-card>
