@@ -10,10 +10,10 @@ import { Cep } from './../cep.model';
 })
 export class CepDetailsComponent implements OnInit {
 
-  cep : Cep;
+  cep: Cep | undefined;
 
   constructor(private router : Router, private cepService : CepService, private route : ActivatedRoute) { 
-    this.cep = {};
+   
   }
 
   ngOnInit(): void {

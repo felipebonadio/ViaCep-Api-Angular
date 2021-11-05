@@ -1,10 +1,11 @@
 
 <h1>Detalhes do CEP</h1>
 
+<div *ngIf="cep">
 <h3>Cep: {{cep.cep}}</h3>
 <h3>Endereço: {{cep.logradouro}}</h3>
 <h3>Bairro: {{cep.bairro}}</h3>
 <h3>Localidade: {{cep.localidade}}</h3>
 <h3>Estado: {{cep.uf}}</h3>
-
+</div>
 <button><a [routerLink]="['']">Voltar</a></button>

@@ -28,7 +28,7 @@ export class CepService {
       return EMPTY
     }
 
-    getCep(cep: string) : Observable<Cep>{
+    getCep(cep: string) : Observable<Cep>{   
       return this.http.get<Cep>('https://viacep.com.br/ws/'+cep+'/json').pipe(
       map(obj => obj),
       catchError(e => this.errorHandler(e))

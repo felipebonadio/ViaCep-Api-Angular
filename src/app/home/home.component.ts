@@ -9,7 +9,7 @@ import { Cep } from 'src/app/cep.model';
 })
 export class HomeComponent implements OnInit {
 
-  cep : string | undefined;
+  cep: Cep | undefined;
 
   constructor( private router: Router) { }
 
