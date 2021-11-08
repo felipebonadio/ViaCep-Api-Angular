@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 //nome da pasta no dist que será feito o build
-const appName = 'viacep-api-angular';
+const appName = 'ViaCep-Api-Angular';
 
 //local onde o build ira gerar os arquivos
 //dirname busca a raiz no heroku
