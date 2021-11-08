@@ -1,11 +1,24 @@
-
+<div class = "conteudo">
 <h1>Detalhes do CEP</h1>
-
-<div *ngIf="cep">
-<h3>Cep: {{cep.cep}}</h3>
-<h3>Endereço: {{cep.logradouro}}</h3>
-<h3>Bairro: {{cep.bairro}}</h3>
-<h3>Localidade: {{cep.localidade}}</h3>
-<h3>Estado: {{cep.uf}}</h3>
-</div>
-<button><a [routerLink]="['']">Voltar</a></button>
+<table *ngIf="cep"> 
+    <thead> 
+    <tr> 
+        <th>Cep</th> 
+        <th>Endereço</th> 
+        <th>Bairro</th> 
+        <th>Localidade</th> 
+        <th>Estado</th> 
+    </tr> 
+    </thead> 
+    <tbody> 
+    <tr> 
+        <td>{{cep.cep}}</td> 
+        <td>{{cep.logradouro}}</td> 
+        <td>{{cep.bairro}}</td> 
+        <td>{{cep.localidade}}</td> 
+        <td>{{cep.uf}}</td> 
+    </tr>    
+    </tbody> 
+    </table> 
+    <br><button><a [routerLink]="['']">Voltar</a></button>
+   </div>
