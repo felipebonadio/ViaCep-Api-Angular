@@ -9,8 +9,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 
 Example of Home-Page
-![image](https://user-images.githubusercontent.com/81599269/140549174-71ddd282-69c1-41f4-bde4-edb1986fae63.png)
+![image](https://user-images.githubusercontent.com/81599269/140785690-259c6ef4-cfe8-46b4-9ccf-a8264252d496.png)
 
 Example of CEP-Details
-![image](https://user-images.githubusercontent.com/81599269/140549284-475cb8aa-c09c-43d4-bcf0-84825480a0d3.png)
+![image](https://user-images.githubusercontent.com/81599269/140785728-1a7bb391-053c-4d0b-a327-1deaabce4be0.png)
 
